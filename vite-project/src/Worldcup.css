@@ -1,0 +1,102 @@
+.versus {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+.pic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -85px;
+}
+
+
+.title {
+  font-size: 30px;
+  opacity: 0.5;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px gray;
+  z-index: 2;
+  display: flex;
+  justify-content: center; /* 가로 정렬을 위해 가운데 정렬 설정 */
+  align-items: center; /* 세로 정렬을 위해 가운데 정렬 설정 */
+  position: relative;
+}
+.main {
+  position: relative;
+}
+
+.enlarged-image {
+  margin-top: -295px;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.comment {
+  text-shadow: 2px 2px 4px gray;
+  font-size: 30px;
+}
+img:hover {
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  margin: 10px;
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  text-shadow: 2px 2px 1px gray;
+  color: white;
+  font-size: 30px;
+}
+.winner{
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
